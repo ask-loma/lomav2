@@ -75,8 +75,6 @@ class App extends React.Component {
         } 
     }
 
-
-    ///////DATA CLEANERS
     const isNull = (property) => {
       if (property === null || property === undefined) {
      return " ";
@@ -114,7 +112,6 @@ class App extends React.Component {
         return imageProp;
       }
     }
-    //
 
     const getDepopData = async () => {
       console.log("getting depop data")
@@ -149,8 +146,6 @@ class App extends React.Component {
 
     }
 
-///
-
     const getGumtreeData = async () => {
       console.log("getting gumtree data")
     
@@ -182,9 +177,6 @@ class App extends React.Component {
     console.log("gumtree data has been set, it took this many milliseconds: " + gumtreeDataSetTime);
 
     }
-
-
-    ///
 
     const getFacebookData = async () => {
       console.log("getting facebook data")

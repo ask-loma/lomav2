@@ -8,9 +8,12 @@
     "@testing-library/jest-dom": "^5.11.6",
     "@testing-library/react": "^11.2.2",
     "@testing-library/user-event": "^12.6.0",
+    "apisauce": "^2.0.1",
     "autoprefixer": "^9.8.6",
     "performance-now": "^2.1.0",
     "postcss": "^7.0.35",
+    "prettier": "^2.2.1",
+    "prettier-airbnb-config": "^1.0.0",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "react-hotjar": "^2.2.1",
@@ -41,5 +44,6 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  }
+  },
+  "prettier": "prettier-airbnb-config"
 }
