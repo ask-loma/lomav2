@@ -6,9 +6,9 @@ export class SearchBar extends React.Component {
     constructor(props) {
         super(props);
         this.handleChange = this.handleChange.bind(this);
-        this.handleTyping= this.handleTyping.bind(this);
+        this.handleTyping = this.handleTyping.bind(this);
     }
-    
+
     componentDidMount() {
         const handleEnter = (e) => {
             if (e.keyCode === 13) {
@@ -18,9 +18,9 @@ export class SearchBar extends React.Component {
         }
 
         document.getElementById("searchQuery").addEventListener("keypress", handleEnter)
-  
+
     }
-   
+
     handleChange() {
         //alert("Change!");
         const searchQuery = document.getElementById("searchQuery").value;
@@ -30,9 +30,9 @@ export class SearchBar extends React.Component {
     handleTyping() {
         clearTimeout(this.timer);
         this.timer = setTimeout(() => {
-          this.handleChange();
+            this.handleChange();
         }, 1000);
-      }
+    }
 
     // type() {
     //     const placeholders = [
@@ -52,7 +52,7 @@ export class SearchBar extends React.Component {
     //         }
 
     //         currentText = texts[count];
-            
+
     //         if (letter.length === currentText.length) {
     //             count++;
     //             index = 0
@@ -64,19 +64,19 @@ export class SearchBar extends React.Component {
     render() {
         return (
             <div className="SearchBar">
-                    <a href="/">
-                        <img src={logo180} alt="logo" 
-                            className="
+                <a href="/">
+                    <img src={logo180} alt="logo"
+                        className="
                                 w-20 sm:w-28 md:w-32 lg:w-36 py-3
                                 block
                                 mx-auto
                             "
                     //onClick={window.location.reload()}
                     />
-                    </a>
+                </a>
 
 
-                    <div className="flex flex-wrap justify-center">
+                <div className="flex flex-wrap justify-center">
                     <input
                         id="searchQuery"
                         //onChange={this.handleTyping}
@@ -89,11 +89,11 @@ export class SearchBar extends React.Component {
                             align-center
                             text-sm text-center italic
                             "
-                        //onChange={this.handleChange}
-                        >
+                    //onChange={this.handleChange}
+                    >
                     </input>
 
-                    <button 
+                    <button
                         className="SearchButton
                             bg-red-500 w-9
                             h-8
@@ -105,8 +105,8 @@ export class SearchBar extends React.Component {
                     </button>
 
 
-                    
-                    </div>   
+
+                </div>
             </div>
         )
     }
