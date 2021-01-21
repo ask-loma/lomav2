@@ -21,14 +21,6 @@ export function authByEmailLink(email) {
     url: "http://localhost:3000/",
     // This must be true.
     handleCodeInApp: true,
-    iOS: {
-      bundleId: "com.example.ios", // we dont have this
-    },
-    android: {
-      packageName: "com.example.android", // we dont have this
-      installApp: true,
-      minimumVersion: "12",
-    },
     dynamicLinkDomain: "loma.page.link", // we need to set this up
   };
 
